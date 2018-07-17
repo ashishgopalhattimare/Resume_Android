@@ -23,4 +23,7 @@
     <string name="technical_string">Skills</string>
     <string name="project_string">Project</string>
     <string name="achievement_string">Achievements</string>
+
+    <string name="project_duration">Duration</string>
+    <string name="project_days">days</string>
 </resources>

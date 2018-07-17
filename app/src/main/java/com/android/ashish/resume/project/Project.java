@@ -8,10 +8,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.android.ashish.resume.R;
+
 public class Project extends Fragment
 {
     private static final String ARG_PAGE = "arg_page";
 
+    // Required empty public Constructor
     public Project() { }
 
     public static Project newInstance(int projectNumber)
@@ -28,13 +31,8 @@ public class Project extends Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState)
     {
-        // Frame that you are returning
-        Bundle arg = getArguments();
+        View projectRootView = inflater.inflate(R.layout.project_item, parent, false);
 
-        TextView textView = new TextView(getActivity());
-        textView.setText("Project " + (arg.getInt(ARG_PAGE) + 1));
-        textView.setGravity(Gravity.CENTER);
-
-        return textView;
+        return projectRootView;
     }
 }
