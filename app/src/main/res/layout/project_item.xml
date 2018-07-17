@@ -39,10 +39,9 @@
 
                 <EditText
                     android:id="@+id/project_description"
-                    android:layout_marginBottom="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
 
                     android:text="Lorem ipsum dolor sit amet, sed integer dolor consequat, id feugiat dolor.
 Nam commodo ante wisi ipsum litora, amet euismod, at duis urna morbi morbi platea.
@@ -51,9 +50,9 @@ quis velit rhoncus tempus aliquet donec urna, eleifend sit."
                     android:focusable="false"
                     android:clickable="false"
                     android:minLines="1"
-                    android:maxLines="30"
+                    android:maxLines="100"
                     android:scrollbars="vertical"
-                    android:background="@android:color/transparent"/>
+                    android:background="@color/lightgray"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -88,7 +87,7 @@ quis velit rhoncus tempus aliquet donec urna, eleifend sit."
                     android:layout_marginBottom="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
 
                     android:text="Lorem ipsum dolor sit amet, sed integer dolor consequat, id feugiat dolor.
 Nam commodo ante wisi ipsum litora, amet euismod, at duis urna morbi morbi platea.
@@ -104,7 +103,6 @@ quis velit rhoncus tempus aliquet donec urna, eleifend sit."
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@android:color/darker_gray"/>
 
