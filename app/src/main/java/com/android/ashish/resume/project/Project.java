@@ -32,7 +32,7 @@ public class Project extends Fragment
         Bundle arg = getArguments();
 
         TextView textView = new TextView(getActivity());
-        textView.setText("Project " + arg.getInt(ARG_PAGE));
+        textView.setText("Project " + (arg.getInt(ARG_PAGE) + 1));
         textView.setGravity(Gravity.CENTER);
 
         return textView;

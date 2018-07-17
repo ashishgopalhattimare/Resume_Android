@@ -33,6 +33,6 @@ public class ProjectAdapter extends FragmentStatePagerAdapter
     @Override
     public CharSequence getPageTitle(int position)
     {
-        return "P   " + position;
+        return "Project " + (position + 1);
     }
 }
