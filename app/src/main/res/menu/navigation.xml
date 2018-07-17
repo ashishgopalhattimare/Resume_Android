@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profile_dashboard"
+        android:icon="@drawable/profile_dashboard"
+        android:title="@string/profile_string" />
+
+    <item
+        android:id="@+id/resume_dashboard"
+        android:icon="@drawable/resume_dashboard"
+        android:title="@string/resume_string" />
+
+    <item
+        android:id="@+id/share_dashboard"
+        android:icon="@drawable/share_dashboard"
+        android:title="@string/share_string" />
+
+</menu>

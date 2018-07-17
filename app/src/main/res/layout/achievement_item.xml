@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="6dp"
+        app:cardCornerRadius="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/achieve_image"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/iitbombay"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+
+                    <TextView
+                        android:id="@+id/achieve_college"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="College Name"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/achieve_course"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Completed"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/achieve_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="startYear - endYear"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/achieve_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:background="@android:color/transparent"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+</LinearLayout>

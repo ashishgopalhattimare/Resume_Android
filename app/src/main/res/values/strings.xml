@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Resume</string>
+    <string name="profile_string">Profile</string>
+    <string name="resume_string">Resume</string>
+    <string name="share_string">Share</string>
+
+    <string name="name_string">Ashish Gopal Hattimare</string>
+    <string name="branch_string">Computer Science and Engineering</string>
+    <string name="college_string">Motilal Nehru National Institute of Technology, Allahabad</string>
+    <string name="email_string">ashishgopalhattimare@gmail.com</string>
+    <string name="location_string">Allahabad (U.P) currently</string>
+    <string name="phone_string">(959) 942 2741</string>
+    <string name="extension_string">+91 </string>
+    <string name="calender_string">31 / 12 / 1997</string>
+    <string name="birth_string">New Delhi, India</string>
+
+    <string name="description_string">
+        I love being creative, exploring and broadening my horizons to be a
+        better Software Developer. I am enthusiatic to user interface and experience design.
+    </string>
+
+    <string name="education_string">Education</string>
+    <string name="technical_string">Skills</string>
+    <string name="project_string">Project</string>
+    <string name="achievement_string">Achievements</string>
+</resources>
