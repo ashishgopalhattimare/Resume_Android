@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".ProjectActivity">
 
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -14,6 +15,21 @@
             layout="@layout/toolbar"
             android:id="@+id/toolbar" />
 
-    </RelativeLayout>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:tabGravity="fill"
+            app:tabTextAppearance="@style/TextAppearance.Design.Tab"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabMode="scrollable" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/project_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
