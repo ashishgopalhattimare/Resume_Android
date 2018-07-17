@@ -46,7 +46,16 @@ public class AchievementAdapter extends ArrayAdapter<Achievement>
         college_textView.setText(currentAchievement.getAchieveCollege());
         course_textView.setText(currentAchievement.getAchieveCourse());
         completion_textView.setText(currentAchievement.getStartingYear() + " - " + currentAchievement.getStartingYear());
-        description_editText.setText(currentAchievement.getAchieveDescription());
+
+        String[] strDetails = currentAchievement.getAchieveDescription().split("_");
+        description_editText.setText("");
+
+        if(strDetails.length > 0) {
+            description_editText.append(strDetails[0]);
+            for(int i = 1; i < strDetails.length; i++){
+                description_editText.append("\n" + strDetails[i]);
+            }
+        }
 
         return listItemView;
     }

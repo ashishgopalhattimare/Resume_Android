@@ -80,6 +80,9 @@
                     android:textSize="13sp"
                     android:focusable="false"
                     android:clickable="false"
+                    android:minLines="1"
+                    android:maxLines="30"
+                    android:scrollbars="vertical"
                     android:background="@android:color/transparent"/>
 
                 <View
