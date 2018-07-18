@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:card_view="http://schemas.android.com/tools"
 
+    android:id="@+id/resume_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="ResumeActivity">
@@ -276,9 +277,12 @@
         </android.support.v4.widget.NestedScrollView>
 
         <android.support.design.widget.FloatingActionButton
+            android:id="@+id/download_resume"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             app:layout_anchor="@id/appbar"
+            android:src="@drawable/download"
+            app:elevation="8dp"
             app:layout_anchorGravity="bottom|center"
             android:clickable="true"/>
 

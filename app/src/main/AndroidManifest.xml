@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.ashish.resume">
+    package="com.android.ashish.resume"
+
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="8" />
 
     <application
         android:allowBackup="true"
@@ -23,10 +28,19 @@
 
         <activity android:name=".ResumeActivity" android:screenOrientation="portrait" />
         <activity android:name=".TechnicalActivity" android:screenOrientation="portrait" />
-        <activity android:name=".ProjectActivity" />
+        <activity android:name=".ProjectActivity" android:screenOrientation="portrait"/>
         <activity android:name=".AchievementActivity" android:screenOrientation="portrait" />
         <activity android:name=".EducationActivity" android:screenOrientation="portrait" />
 
     </application>
+    
+    <!-- Permission: Allow Connect to Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Permission: Access Network Status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <!-- Permission: Writing to Download -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 </manifest>

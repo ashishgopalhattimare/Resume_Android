@@ -93,7 +93,7 @@ public class AchievementActivity extends AppCompatActivity {
                 2018, 2018, this.description));
 
         this.description = "Learned the basics on how to create a website page using HTML5 and CSS3";
-        achievementArrayList.add(new Achievement(R.drawable.edx, "Edx (W3Cx Course)",
+        achievementArrayList.add(new Achievement(R.drawable.edx, "edX (W3Cx Course)",
                 "HTML5 and CSS3 for Front-End Web Development",
                 2018, 2018, this.description));
 
