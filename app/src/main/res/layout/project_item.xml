@@ -34,25 +34,19 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <EditText
+                <TextView
                     android:id="@+id/project_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
-
-                    android:text="Lorem ipsum dolor sit amet, sed integer dolor consequat, id feugiat dolor.
-Nam commodo ante wisi ipsum litora, amet euismod, at duis urna morbi morbi platea.
-quis velit rhoncus tempus aliquet donec urna, eleifend sit."
-
+                    android:layout_marginBottom="10dp"
                     android:focusable="false"
                     android:clickable="false"
-                    android:minLines="1"
-                    android:maxLines="100"
-                    android:scrollbars="vertical"
-                    android:background="@color/lightgray"/>
+                    android:background="@android:color/transparent"
+                    android:scrollbars="vertical"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -65,7 +59,8 @@ quis velit rhoncus tempus aliquet donec urna, eleifend sit."
                         android:layout_height="wrap_content"
                         android:textSize="15sp"
                         android:textStyle="bold"
-                        android:text="Duration : "/>
+                        android:layout_marginRight="2dp"
+                        android:text="@string/project_duration"/>
 
                     <TextView
                         android:id="@+id/project_days"
@@ -78,25 +73,19 @@ quis velit rhoncus tempus aliquet donec urna, eleifend sit."
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
-                        android:text=" days"/>
+                        android:layout_marginLeft="2dp"
+                        android:text="@string/project_days"/>
 
                 </LinearLayout>
 
-                <EditText
+                <TextView
                     android:id="@+id/project_role"
                     android:layout_marginBottom="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
-
-                    android:text="Lorem ipsum dolor sit amet, sed integer dolor consequat, id feugiat dolor.
-Nam commodo ante wisi ipsum litora, amet euismod, at duis urna morbi morbi platea.
-quis velit rhoncus tempus aliquet donec urna, eleifend sit."
-
                     android:focusable="false"
                     android:clickable="false"
-                    android:minLines="0"
-                    android:maxLines="30"
                     android:scrollbars="vertical"
                     android:background="@android:color/transparent"/>
 

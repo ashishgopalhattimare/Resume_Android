@@ -23,7 +23,7 @@
 
         <activity android:name=".ResumeActivity" android:screenOrientation="portrait" />
         <activity android:name=".TechnicalActivity" android:screenOrientation="portrait" />
-        <activity android:name=".ProjectActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ProjectActivity" />
         <activity android:name=".AchievementActivity" android:screenOrientation="portrait" />
         <activity android:name=".EducationActivity" android:screenOrientation="portrait" />
 

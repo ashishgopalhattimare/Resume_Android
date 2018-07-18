@@ -1,5 +1,6 @@
 package com.android.ashish.resume.project;
 
+import android.media.Image;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.Html;
@@ -8,7 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.ashish.resume.R;
 
@@ -16,20 +20,26 @@ public class Project extends Fragment
 {
     private static final String ARG_PAGE = "arg_page";
 
-    private String description = "<p>Minesweeper is a desktop appication game which is build using " +
-            "Java GUI Development. The working of the game is very much similar to the default " +
-            "minesweeper game fron windows xp.</p><p>The game include timer which start when the " +
-            "player mines the first block of the game. The timer is displayed digitally which is " +
-            "created by using digital-number images from the images folder in the directory.<br/>" +
-            "<br/>It also includes help option which could be used to get detailed description about" +
-            " the game components.</p><p>The game has different level of difficulties. They are as " +
-            "follow:</p><p>- Beginner<br/><br/>- Intermediate<br/><br/>- Expert<br/><br/>- <b>Custom" +
-            " : </b>This options gives the user to customize the level of difficulty on their own.</p>";
+    private static int title[] = {R.string.minesweeper_title, R.string.brick_breaker_title};
+    private static int description[] =
+            {
+                    R.string.minesweeper_description,
+                    R.string.brick_breaker_description
+            };
+
+    private static int images[][] =
+            {
+                    {R.drawable.minesweeper1, R.drawable.minesweeper2, R.drawable.minesweeper3, R.drawable.minesweeper4},
+                    {R.drawable.brick_breaker1, R.drawable.brick_breaker2, R.drawable.brick_breaker3, R.drawable.brick_breaker4}
+            };
+
+    private int index;
+
 
     // Required empty public Constructor
     public Project() { }
 
-    public static Project newInstance(int projectNumber)
+    public void newInstance(int projectNumber)
     {
         Project project = new Project();
         Bundle arg = new Bundle();
@@ -37,20 +47,34 @@ public class Project extends Fragment
         arg.putInt(ARG_PAGE, projectNumber);
         project.setArguments(arg);
 
-        return project;
+        index = projectNumber;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState)
     {
-        View projectView = inflater.inflate(R.layout.project_item, parent, false);
+        final View projectView = inflater.inflate(R.layout.project_item, parent, false);
 
         TextView projectTitle = (TextView) projectView.findViewById(R.id.project_title);
-        EditText projectDescribe = (EditText)projectView.findViewById(R.id.project_description);
-        EditText projectRole = (EditText)projectView.findViewById(R.id.project_role);
+        TextView projectDescribe = (TextView)projectView.findViewById(R.id.project_description);
+        TextView projectRole = (TextView)projectView.findViewById(R.id.project_role);
+        LinearLayout projectImages = (LinearLayout)projectView.findViewById(R.id.project_imageLayout);
 
-        projectTitle.setText("Minesweeper Pro");
-        projectDescribe.setText(Html.fromHtml(this.description));
+        projectTitle.setText(getString(title[index]));
+        projectDescribe.setText(Html.fromHtml(getString(description[index])));
+
+        for(int i = 0; i < images[index].length; i++) {
+            ImageView imageView = (ImageView)LayoutInflater.from(getContext()).inflate(R.layout.image_item, parent, false);
+            imageView.setImageResource(images[index][i]);
+            projectImages.addView(imageView);
+
+            imageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Toast.makeText(getContext(), "Image Clicked : [ "+index+" ]", Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
 
         return projectView;
     }

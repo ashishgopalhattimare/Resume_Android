@@ -24,6 +24,56 @@
     <string name="project_string">Project</string>
     <string name="achievement_string">Achievements</string>
 
-    <string name="project_duration">Duration</string>
-    <string name="project_days">days</string>
+    <string name="project_duration">Duration : </string>
+    <string name="project_days"> days</string>
+
+    <string name="minesweeper_title">Minesweeper Pro</string>
+    <string name="minesweeper_description">
+        <![CDATA[
+    <p>
+        Minesweeper is a desktop appication game which is build using Java GUI Development. The working of
+        the game is very much similar to the default minesweeper game fron windows xp.
+    </p>
+    <p>
+        The game include timer which start when the player mines the first block of the game. The timer
+        is displayed digitally which is created by using digital-number images from the images folder in
+        the directory.<br/><br/>It also includes help option which could be used to get detailed
+        description about the game components.
+    </p>
+    <p>The game has different level of difficulties. They are as follow:</p>
+    - Beginner<br/>
+    - Intermediate<br/>
+    - Expert<br/>
+    - <b>Custom : </b>This option allow the user to customize the level of difficulty on their own.
+
+    <br/><br/>
+    <b>IDE Used : </b>Eclipse for JavaEE Developers
+]]>
+    </string>
+
+    <string name="brick_breaker_title">Brick Breaker</string>
+    <string name="brick_breaker_description">
+        <![CDATA[
+    <p>
+        Brick breaker is a desktop application game which is build using Java Object Oriented programming
+        and GUI Development. The working of the game is very much similar to the traditional Brick Breaker
+        game. The game has total 10 Levels where the difficulty of level increases as the player progress.
+    </p>
+    <p> The Game consists of two mode: </p>
+    <p>
+    	<b>
+        - Campaign Mode<br/>
+        - Level Mode<br/>
+    	</b>
+    </p>
+    <p><em>"Level mode allows player to play only one level as a demo to Campaign mode"</em></p>
+    <p>There are multiple cheats available in the game which could be viewed in game Setting.</p>
+
+    <b>IDE Used : </b>IntelliJ IDEA
+]]>
+
+    </string>
+
+
+
 </resources>

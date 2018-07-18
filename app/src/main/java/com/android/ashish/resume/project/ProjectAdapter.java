@@ -4,13 +4,14 @@ import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.widget.Toast;
 
 import com.android.ashish.resume.ProjectActivity;
 
 public class ProjectAdapter extends FragmentStatePagerAdapter
 {
     private Context context;
-    private final int pageCount = 10;
+    private final int pageCount = 2;
 
     public ProjectAdapter(ProjectActivity projectActivity, FragmentManager supportFragmentManager)
     {
@@ -21,7 +22,8 @@ public class ProjectAdapter extends FragmentStatePagerAdapter
     @Override
     public Fragment getItem(int position)
     {
-        Project project = Project.newInstance(position);
+        Project project = new Project();
+        project.newInstance(position);
         return project;
     }
 
